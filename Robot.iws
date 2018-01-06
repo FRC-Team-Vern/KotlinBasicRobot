@@ -5,12 +5,7 @@
       <change beforePath="" afterPath="$PROJECT_DIR$/.gradle/4.4/fileChanges/last-build.bin" />
       <change beforePath="" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
       <change beforePath="" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Robot.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Robot.ipr" />
       <change beforePath="" afterPath="$PROJECT_DIR$/Robot.iws" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Robot_main.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Robot_test.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build.gradle" />
       <change beforePath="" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/frc/team5461/robot/Robot.class" />
       <change beforePath="" afterPath="$PROJECT_DIR$/build/kotlin-build/artifact-difference.tab" />
       <change beforePath="" afterPath="$PROJECT_DIR$/build/kotlin-build/artifact-difference.tab.keystream" />
@@ -105,14 +100,6 @@
       <change beforePath="" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/last-build.bin" />
       <change beforePath="" afterPath="$PROJECT_DIR$/build/libs/Robot.jar" />
       <change beforePath="" afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gradlew" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gradlew.bat" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/kotlin/frc/team5461/robot/OI.kt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/kotlin/frc/team5461/robot/Robot.kt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/kotlin/frc/team5461/subsystems/ExampleSubsystem.kt" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -1017,12 +1004,20 @@
       <workItem from="1515275182635" duration="151000" />
       <workItem from="1515275360006" duration="28000" />
       <workItem from="1515275414119" duration="4000" />
-      <workItem from="1515275428558" duration="161000" />
+      <workItem from="1515275428558" duration="189000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1515275599705</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1515275599705</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3456000" />
+    <option name="totallyTimeSpent" value="3484000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="42" width="1260" height="670" extended-state="0" />
@@ -1066,6 +1061,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Initial commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
