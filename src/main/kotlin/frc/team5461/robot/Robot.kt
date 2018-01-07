@@ -8,14 +8,6 @@ import edu.wpi.first.wpilibj.smartdashboard.SendableChooser
 import java.io.File
 import java.util.TimeZone
 
-
-
-
-
-
-
-
-
 class Robot : IterativeRobot() {
     companion object {
         var exampleSubsystem = ExampleSubsystem()
@@ -31,19 +23,15 @@ class Robot : IterativeRobot() {
     }
 
     override fun teleopInit() {
-        if (autonomousCommand != null) autonomousCommand.cancel();
+        autonomousCommand.cancel();
     }
     override fun teleopPeriodic() {
     }
     override fun autonomousInit() {
         autonomousCommand = chooser.getSelected()
-        if (autonomousCommand == null) {
-            autonomousCommand = chooser.getSelected() as Command
-            if (autonomousCommand != null) {
-                autonomousCommand.start()
-            }
-        }
-        if (autonomousCommand != null) autonomousCommand.start()
+        autonomousCommand = chooser.getSelected() as Command
+        autonomousCommand.start()
+        autonomousCommand.start()
 
     }
     override fun autonomousPeriodic() {
