@@ -1,55 +1,47 @@
 package frc.team5461.robot
 import frc.team5461.subsystems.ExampleSubsystem
-import edu.wpi.first.wpilibj.IterativeRobot
+import edu.wpi.first.wpilibj.TimedRobot
 import edu.wpi.first.wpilibj.command.Command
 import edu.wpi.first.wpilibj.command.Scheduler
-import edu.wpi.first.wpilibj.livewindow.LiveWindow
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser
-import java.io.File
-import java.util.TimeZone
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
 
-class Robot : IterativeRobot() {
+class Robot : TimedRobot() {
     companion object {
-        var exampleSubsystem = ExampleSubsystem()
-        var autonomousCommand = exampleSubsystem.exampleCommand
-        var oi = OI()
+        val exampleSubsystem = ExampleSubsystem()
+        // We choose to have a true default command instead of possibly leaving this null
+        var m_autonomousCommand: Command? = null
+        val oi = OI()
     }
 
-    var chooser = SendableChooser<Command>()
+    var m_chooser = SendableChooser<Command>()
 
     override fun robotInit(){
-        TimeZone.setDefault(TimeZone.getTimeZone("America/Denver"))
-        chooser = SendableChooser()
+        m_chooser.addDefault("Default Auto", exampleSubsystem.exampleCommand)
+        SmartDashboard.putData("Auto Mode", m_chooser)
+    }
+
+    override fun disabledPeriodic() {
+        Scheduler.getInstance().run()
+    }
+
+    override fun autonomousInit() {
+        m_autonomousCommand = m_chooser.selected
+        m_autonomousCommand?.start()
+    }
+
+    override fun autonomousPeriodic() {
+        Scheduler.getInstance().run()
     }
 
     override fun teleopInit() {
-        autonomousCommand.cancel();
+        m_autonomousCommand?.cancel()
     }
+
     override fun teleopPeriodic() {
+        Scheduler.getInstance().run()
     }
-    override fun autonomousInit() {
-        autonomousCommand = chooser.getSelected()
-        autonomousCommand = chooser.getSelected() as Command
-        autonomousCommand.start()
-        autonomousCommand.start()
 
-    }
-    override fun autonomousPeriodic() {
-        Scheduler.getInstance().run();
-    }
     override fun testPeriodic() {
-        LiveWindow.run()
-    }
-    override fun testInit() {
-
-    }
-
-    fun findLogDirectory(root: File): File? {
-        // does the root directory exist?
-        if (!root.isDirectory) return null
-
-        val logDirectory = File(root, "logs")
-        return if (!logDirectory.isDirectory) null else logDirectory
-
     }
 }
