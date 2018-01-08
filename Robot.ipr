@@ -12,6 +12,8 @@
       <entry name="!?*.groovy" />
     </wildcardResourcePatterns>
     <bytecodeTargetLevel target="1.8">
+      <module name="KotlinBasicRobot_main" target="1.8" />
+      <module name="KotlinBasicRobot_test" target="1.8" />
       <module name="Robot_main" target="1.8" />
       <module name="Robot_test" target="1.8" />
     </bytecodeTargetLevel>
@@ -31,6 +33,7 @@
             <option value="$PROJECT_DIR$" />
           </set>
         </option>
+        <option name="useAutoImport" value="true" />
       </GradleProjectSettings>
     </option>
   </component>
@@ -74,9 +77,10 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/KotlinBasicRobot.iml" filepath="$PROJECT_DIR$/KotlinBasicRobot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KotlinBasicRobot_main.iml" filepath="$PROJECT_DIR$/KotlinBasicRobot_main.iml" group="KotlinBasicRobot" />
+      <module fileurl="file://$PROJECT_DIR$/KotlinBasicRobot_test.iml" filepath="$PROJECT_DIR$/KotlinBasicRobot_test.iml" group="KotlinBasicRobot" />
       <module fileurl="file://$PROJECT_DIR$/Robot.iml" filepath="$PROJECT_DIR$/Robot.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Robot_main.iml" filepath="$PROJECT_DIR$/Robot_main.iml" group="Robot" />
-      <module fileurl="file://$PROJECT_DIR$/Robot_test.iml" filepath="$PROJECT_DIR$/Robot_test.iml" group="Robot" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
@@ -143,20 +147,22 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/openrio.mirror.third.kauailabs/navx-java/3.0.342/35a06a0b5be816d2e88139e1a3529148fab3a675/navx-java-3.0.342-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.2.0">
+    <library name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.2.10">
       <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.0/25eb440d6eeb9fc60299121020fe726eb2100d03/kotlin-stdlib-1.2.0.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.10/b9bf650516989595a5390e5a54181e16347208ac/kotlin-stdlib-1.2.10.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.0/180a4946e471f9f47d4b6139c5dbc5e7603a8424/kotlin-stdlib-1.2.0-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.10/c0f90f56ebb568fe5fa4001ee1941b27cb8a2e1f/kotlin-stdlib-1.2.10-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.jetbrains:annotations:13.0">
       <CLASSES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar!/" />
       </CLASSES>
-      <JAVADOC />
+      <JAVADOC>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/73368c3b0887f3adc2c2730dd1b95d7c3781aaf3/annotations-13.0-javadoc.jar!/" />
+      </JAVADOC>
       <SOURCES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/5991ca87ef1fb5544943d9abc5a9a37583fabe03/annotations-13.0-sources.jar!/" />
       </SOURCES>
