@@ -1,6 +1,6 @@
 # KotlinRobot
 ## Kotlin boilerplate code for a basic Robot
-## How does use?
+## How to use?
 1. Pull code
 2. Write changes
 3. Open the "Gradle" menu in IntelliJ (View > Tool Windows > Gradle)
