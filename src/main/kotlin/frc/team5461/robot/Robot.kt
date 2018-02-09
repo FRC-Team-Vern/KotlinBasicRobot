@@ -1,4 +1,5 @@
 package frc.team5461.robot
+import com.analog.adis16448.frc.ADIS16448_IMU
 import frc.team5461.subsystems.ExampleSubsystem
 import edu.wpi.first.wpilibj.TimedRobot
 import edu.wpi.first.wpilibj.command.Command
@@ -11,6 +12,7 @@ class Robot : TimedRobot() {
         val exampleSubsystem = ExampleSubsystem()
         // We choose to have a true default command instead of possibly leaving this null
         var m_autonomousCommand: Command? = null
+        val imu = ADIS16448_IMU()
         val oi = OI()
     }
 

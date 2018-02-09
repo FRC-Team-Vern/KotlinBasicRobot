@@ -5,7 +5,7 @@ import edu.wpi.first.wpilibj.buttons.JoystickButton
 import frc.team5461.subsystems.ExampleSubsystem
 
 class OI {
-    val stick = Joystick(0)
+    val stick = XboxController(0)
     var button = JoystickButton(stick, 0)
 
     init {
