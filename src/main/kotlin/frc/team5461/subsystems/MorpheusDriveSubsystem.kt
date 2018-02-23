@@ -10,9 +10,9 @@ import frc.team5461.robot.Robot
 
 class MorpheusDriveSubsystem: Subsystem()  {
     val frontLeft = WPI_TalonSRX(3)
-    val frontRight = WPI_TalonSRX(4)
-    val backLeft = WPI_TalonSRX(5)
-    val backRight = WPI_TalonSRX(6)
+    val frontRight = WPI_TalonSRX(1)
+    val backLeft = WPI_TalonSRX(4)
+    val backRight = WPI_TalonSRX(2)
     val mecanumDrive = MecanumDrive(frontLeft,backLeft,frontRight,backRight)
 
     override fun initDefaultCommand() {
